@@ -7,5 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @EnableDiscoveryClient
 @SpringBootApplication
 public class ProviderUserApplication {
- 
+ public static void main(String[] args) {
+	
+}
 }
