@@ -20,16 +20,18 @@ public class ReentrantLock02 {
 
   public static void main(String[] args) throws InterruptedException {
     ReentrantLock02 reentrantLock01 = new ReentrantLock02();
-    new Thread(()->{
-      reentrantLock01.add();
-    }).start();
-    Thread.sleep(1000);//主要目的是让两个线程把事情干完
     Thread thread = new Thread(() -> {
       reentrantLock01.add();
     });
     thread.start();
+
     Thread.sleep(1000);//主要目的是让两个线程把事情干完
-    thread.interrupt();//增加这段代码================
+    Thread thread2 = new Thread(() -> {
+      reentrantLock01.add();
+    });
+    thread2.start();
+    Thread.sleep(1000);//主要目的是让两个线程把事情干完
+    thread2.interrupt();//增加这段代码================
     System.out.println(i);
 
   }
@@ -41,11 +43,11 @@ public class ReentrantLock02 {
     try {
       //reentrantLock.reentrantLock();
       try {
-        reentrantLock.lockInterruptibly();//====================
+        reentrantLock.lockInterruptibly();
       } catch (InterruptedException e) {
         e.printStackTrace();
       }
-      for (;;) {  //while true====================
+      for (;;) {
         i++;
       }
     } finally {
