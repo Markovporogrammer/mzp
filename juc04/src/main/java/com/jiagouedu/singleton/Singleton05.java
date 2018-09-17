@@ -38,7 +38,10 @@ public class Singleton05 {
   public static  Singleton05 getSingleton01(){
     if (null==singleton01){
         synchronized (Singleton05.class) {
-          singleton01 = new Singleton05();
+          if (null==singleton01){
+            singleton01 = new Singleton05();
+          }
+
         }
     }
     return singleton01;
@@ -46,7 +49,7 @@ public class Singleton05 {
   }
 
   public static void main(String[] args) {
-     Set set=new CopyOnWriteArraySet();
+     final Set set=new CopyOnWriteArraySet();
     TlUtil.timeTasks(100, 1, new Runnable() {
       @Override
       public void run() {

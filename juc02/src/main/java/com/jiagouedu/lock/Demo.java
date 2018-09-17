@@ -27,7 +27,12 @@ public class Demo {
      LikeSearch<String> likeSearch = new LikeSearch<String>();
             likeSearch.put("湖北","湖北");
             likeSearch.put("湖南","湖南");
-            Collection<String> search = likeSearch.search("南", 10);
+            likeSearch.put("河北","河北");
+            likeSearch.put("天北","天北");
+            likeSearch.put("地北","地北");
+            likeSearch.put("南北","南北");
+            likeSearch.put("北北","北北");
+            Collection<String> search = likeSearch.search("北北", 3);
             for(Iterator it=search.iterator();it.hasNext();){
                 System.out.println(it.next());
             }

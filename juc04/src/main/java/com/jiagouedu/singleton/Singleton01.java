@@ -39,6 +39,7 @@ public class Singleton01 {
     TlUtil.timeTasks(100, 1, new Runnable() {
       @Override
       public void run() {
+
         System.out.println(Singleton01.getSingleton01().hashCode());
       }
     });

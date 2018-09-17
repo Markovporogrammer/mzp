@@ -29,7 +29,7 @@ public class ReentrantLock03 {
     });
     thread.start();
     Thread.sleep(1000);//主要目的是让两个线程把事情干完
-    thread.interrupt();//增加这段代码================
+   // thread.interrupt();//增加这段代码================
     System.out.println(i);
 
 

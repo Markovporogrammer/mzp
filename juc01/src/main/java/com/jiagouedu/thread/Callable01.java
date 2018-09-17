@@ -1,17 +1,29 @@
 package com.jiagouedu.thread;
-/*
- * 　　　┏┓　　　┏┓
- * 　　┏┛┻━━━┛┻┓
- * 　　┃　　　━　　　┃
- * 　　┃　┳┛　┗┳　┃
- * 　　┃　　　┻　　　┃
- * 　　┗━┓　　　┏━┛
- * 　　　　┃　　　┗━━━┓
- * 　　　　┃　　永无BUG 　┣┓
- * 　　　　┃　　如来保佑　┏┛
- * 　　　　┗┓┓┏━┳┓┏┛
- * 　　　　　┗┻┛　┗┻┛
- */
+//
+
+//* 　　　┏┓　　　┏┓
+
+//* 　　┏┛┻━━━┛┻┓
+
+//* 　　┃　　　━　　　┃
+
+//* 　　┃　┳┛　┗┳　┃
+
+//* 　　┃　　　┻　　　┃
+
+//* 　　┗━┓　　　┏━┛
+
+//* 　　　　┃　　　┗━━━┓
+
+//* 　　　　┃　　永无BUG 　┣┓
+
+//* 　　　　┃　　如来保佑　┏┛
+
+//* 　　　　┗┓┓┏━┳┓┏┛
+
+//* 　　　　　┗┻┛　┗┻┛
+
+//
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

@@ -30,7 +30,7 @@ public class KafkaStart {
 
   public static void main(String[] args) {
     KafkaStart xxxStart=new KafkaStart();
-    TlUtil.timeTasks(10, 10, new Runnable() {
+    TlUtil.timeTasks(10, 1, new Runnable() {
       @Override
       public void run() {
 //        KafkaStart xxxStart=new KafkaStart();  //测试下

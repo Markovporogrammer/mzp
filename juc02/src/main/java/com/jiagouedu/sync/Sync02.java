@@ -29,9 +29,11 @@ public class Sync02 implements Runnable {
   /***
    * 方法级别的
    */
-  private synchronized  void add() {
-    for (int j = 0; j < 10000; j++) {
-      i++;
+  private   void add() {
+    synchronized (this) {
+      for (int j = 0; j < 10000; j++) {
+        i++;
+      }
     }
   }
 

@@ -42,9 +42,9 @@ public class Singleton04 {
     return singleton01;
 
   }
-
+  final static Set set=new CopyOnWriteArraySet();
   public static void main(String[] args) {
-     Set set=new CopyOnWriteArraySet();
+
     TlUtil.timeTasks(100, 1, new Runnable() {
       @Override
       public void run() {

@@ -35,11 +35,11 @@ public class Semaphore01 {
   public static void action(int i) throws InterruptedException {
       semaphore.acquire();
     System.out.println(i+"在京东秒杀iphonex");
-    try {
+/*    try {
       Thread.sleep(3000);
     } catch (InterruptedException e) {
       e.printStackTrace();
-    }
+    }*/
     System.out.println(i+"秒杀成功");
     semaphore.release();
 

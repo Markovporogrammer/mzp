@@ -31,7 +31,7 @@ public class Sync05 implements Runnable {
    */
   private   void add() {
     //要改成Sync05.class
-    synchronized (this){
+    synchronized (Sync05.class){
     for (int j = 0; j < 10000; j++) {
       i++;
     }

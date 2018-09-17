@@ -41,7 +41,7 @@ public class ReentrantLock02 {
    */
   public  void add(){
     try {
-      //reentrantLock.reentrantLock();
+     // reentrantLock.reentrantLock();
       try {
         reentrantLock.lockInterruptibly();
       } catch (InterruptedException e) {
